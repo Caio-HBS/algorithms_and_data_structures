@@ -11,8 +11,6 @@ Inside this repository, you will find folders containing exercises on different 
 
 These exercises come from the course "Data Structures and Algorithms in Python", taught by Aakash N. S. They can be found (as well as their original course) in the following links: 
 
-https://www.youtube.com/watch?v=pkYVOmU3MgA 
-
-and 
+https://www.youtube.com/watch?v=pkYVOmU3MgA
 
 https://jovian.com/learn/data-structures-and-algorithms-in-python

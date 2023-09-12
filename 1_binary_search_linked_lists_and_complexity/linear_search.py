@@ -17,7 +17,7 @@ def linear_search(array: list, item: int) -> int:
     Cons:
         - Inefficient;
 
-    Big O notation:
+    Big O notation: O(n)
     """
 
     # Initialize a variable to go through the array.
