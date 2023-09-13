@@ -27,4 +27,11 @@ test_list = [
         },
         'output': 6
     },
+    {
+        'test_description': 'The list is empy',
+        'input': {
+            'rotated': [],
+        },
+        'output': -1
+    },
 ]

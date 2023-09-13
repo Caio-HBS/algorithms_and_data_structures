@@ -25,6 +25,9 @@ def how_many_rotations(rotated: list) -> int:
     Args:
         rotated: rotated list.
     """
+    if rotated == []:
+        return -1
+
     left, right = 0, (len(rotated) - 1)
 
     # Handles the cases where the list wasn't rotated.
