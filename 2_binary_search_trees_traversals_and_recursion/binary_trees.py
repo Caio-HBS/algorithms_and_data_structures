@@ -1,3 +1,14 @@
+from utils import (
+    tree_size,
+    tree_height,
+    display_keys,
+    tree_to_tuple,
+    traverse_in_order,
+    traverse_pre_order,
+    traverse_post_order,
+)
+
+
 class TreeNode:
     """
     Simple implementation of a binary tree in Python.
@@ -43,31 +54,18 @@ def parse_tuple(data):
     return node
 
 
-"""
-Exercise: Define a function tree_to_tuple that converts a binary tree into a tuple 
-representing the same tree. E.g. tree_to_tuple converts the tree created above to 
-the tuple ((1, 3, None), 2, ((None, 3, 4), 5, (6, 7, 8))). Hint: Use recursion.
-"""
+# Tests
+tree2 = parse_tuple(((1, 3, None), 2, ((None, 3, 4), 5, (6, 7, 8))))
+print("\nDisplay tree vertically:\n")
+display_keys(tree2, "  ")
 
+tree3 = tree_to_tuple(tree2)
+print("\nTree to Tuple:", tree3)
 
-def tree_to_tuple(node):
-    """
-    Converts a binary tree (or a node of it) into a tuple representation.
+print("\nTraverse tree inorder:", traverse_in_order(tree2))
+print("Traverse tree preorder:", traverse_pre_order(tree2))
+print("Traverse tree postorder:", traverse_post_order(tree2))
 
-    Args:
-        node: either the tree itself or a node of it.
-    """
-
-    # Catches the None nodes.
-    if node is None:
-        return None
-
-    # Recursion to create the left and right nodes.
-    left_node = tree_to_tuple(node.left)
-    right_node = tree_to_tuple(node.right)
-
-    # Catches the leaves (nodes without children).
-    if left_node is None and right_node is None:
-        return node.key
-    else:
-        return (left_node, node.key, right_node)
+print("\nTree height (maximum):", tree_height(tree2))
+print("Tree height (minimum):", tree_height(tree2, minimum=True))
+print("Tree size:", tree_size(tree2))
