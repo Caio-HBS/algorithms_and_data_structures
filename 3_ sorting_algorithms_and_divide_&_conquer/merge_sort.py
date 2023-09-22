@@ -65,7 +65,7 @@ def merge_sort(array: list) -> list:
 
 
 # Print the tests
-print("\nBINARY SEARCH TESTS:\n")
+print("\nMERGE SORT TESTS:\n")
 for test in test_list:
     if (merge_sort(**test["input"]) == test["output"]) == True:
         status = "PASSED"

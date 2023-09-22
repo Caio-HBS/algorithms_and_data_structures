@@ -36,7 +36,7 @@ def sort_list(array: list) -> list:
 
 
 # Print the tests
-print("\nBINARY SEARCH TESTS:\n")
+print("\nBUBBLE SORT TESTS:\n")
 for test in test_list:
     if (sort_list(**test["input"]) == test["output"]) == True:
         status = "PASSED"
