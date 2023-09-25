@@ -106,3 +106,6 @@ def merge_sort(objs, compare=default_compare):
         merge_sort(objs[mid:], compare),
         compare
     )
+
+
+# TODO: Implementation of quicksort and bubble sort.
