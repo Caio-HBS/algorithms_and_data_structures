@@ -11,7 +11,7 @@ another sequence. For exemple, "edpt" is a subsequence of "serendipitous"
 """
 from colorama import Fore, Style
 
-from test_cases import test_list, test_print
+from test_cases_subsequence import test_list, test_print
 
 
 # Recursion approach.
